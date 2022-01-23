@@ -112,11 +112,32 @@
         flex-grow: 1;
         width: 50%;
     }
+    .charge_box_content {
+        flex-direction: column;
+    }
+    .charge_box_business {
+        max-width: 100%;
+        padding-bottom: 35px;
+    }
+    .charge_box_head {
+        margin: -4px;
+    }
+    .charge_box_pro {
+        max-width: 100%;
+        padding-bottom: 35px;
+        margin-top: 45px;
+    }
     .inner_testimonial {
         justify-content: center;
     }
     .testimonial {
         display: none;
+    }
+    .testimonial_box {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .testimonial_content {
         text-align: center;
@@ -124,12 +145,33 @@
     }
     .testimonial_body {
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonial_client {
+        width: 100%;
+    }
+    .faq_box {
+        max-width: 100%;
     }
     .container.inner_download {
         flex-direction: column;
     }
     .download_container {
         order: 2;
+        text-align: center;
+    }
+    .download_content h2 {
+        font-size: 40px;
+    }
+    .download_img_box {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 45px;
+    }
+    .download_img_box img {
+        margin-right: 0;
     }
 }
 @media only screen and (max-width: 570px){    
@@ -158,4 +200,20 @@
         flex-grow: 1;
         width: 100%;
     }
+    .charge_box_content {
+        flex-direction: column;
+    }
+    .charge_box_business {
+        max-width: 100%;
+        padding-bottom: 35px;
+    }
+    .charge_box_head {
+        margin: -4px;
+    }
+    .charge_box_pro {
+        max-width: 100%;
+        padding-bottom: 35px;
+        margin-top: 45px;
+    }
+    
 }

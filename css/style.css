@@ -152,6 +152,7 @@ header{
 }
 .btn_container{
     display: flex;
+    align-items: center;
 }
 .demo_btn{
     font-size: 16px;
@@ -472,15 +473,16 @@ header{
 
 #charge {
     text-align: center;
-    padding: 80px 0;
+    padding: 40px 0;
 }
-.inner_charge {
+.charge_content {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.charge_content {
+.charge_upper_content{
     max-width: 633px;
 }
 .charge_content h2{
@@ -496,16 +498,21 @@ header{
     font-weight: 400;
     padding: 33px 0;
 }
+.monthly_btn_toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 45px;
+}
 .monthly_btn {
     width: 283px;
     height: 57px;
     border-radius: 29px;
     border: 2px solid #ebebeb;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
-    margin-top: 86px;
+    justify-content: space-between;
 }
 .monthly{
     font-size: 16px;
@@ -527,17 +534,23 @@ header{
     border: none;
     margin-right: 30px;
 }
+.charge_box_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .charge_box_content {
     display: flex;
     justify-content: space-between;
     max-width: 700px;
 }
-.charge_box{
-    max-width: 318px;
+.charge_box_business{
+    max-width: 48%;
+    max-height: 590px;
     border-radius: 9px;
     filter: drop-shadow(3.837px 54.866px 31px rgba(144,163,177,0.18));
     background-color: #ffffff;
-    margin-right: 30px;
+    overflow: hidden;
 }
 .charge_box_head{
     width: 317px;
@@ -547,6 +560,7 @@ header{
 .charge_head_up {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     padding: 70px 0 25px 0;
 }
 .charge_box_head h2{
@@ -582,18 +596,21 @@ header{
     color: #999ca5;
     font-weight: 400;
 }
-.charge_box_2{
-    width: 317px;
+.charge_box_pro{
+    max-width: 48%;
+    max-height: 670px;
     border-radius: 9px;
     background-color: #ffffff;
     border: 2px solid #ebebeb;
+    overflow: hidden;
+    padding-bottom: 30px;
 }
 .charge_btn_text{
     font-size: 16px;
     line-height: 28px;
     color: #2500f9;
     font-weight: 400;
-    padding: 30px 0;
+    margin-top: 15px;
 }
 
 
@@ -601,12 +618,19 @@ header{
     Testimonial Section 
    =============== */
 
-.inner_testimonial {
+#testimonial{
     padding: 50px 0;
-    display: flex;
-    justify-content: end;
 }
-.testimonial_container {
+.inner_testimonial {
+    display: flex;
+}
+.testimonial {
+    max-width: 580px;
+}
+.testimonial img{
+    max-width: 100%;
+}
+.testimonial_box{
     max-width: 600px;
 }
 .testimonial_content h2{
@@ -636,18 +660,23 @@ header{
     font-weight: 600;
 }
 .testimonial_body p{
-    width: 568px;
-    height: 144px;
+    max-width: 568px;
     font-size: 16px;
     line-height: 26px;
     color: #616368;
     font-weight: 400;
-    max-width: 563px;
 }
 .testimonial_client {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
 }
-.testimonial_client img {
+.client_info {
+    display: flex;
+    align-items: center;
+}
+.client_info img {
     width: 90px;
     height: 95px;
 }
@@ -666,18 +695,32 @@ header{
     color: #616368;
     font-weight: 400;
 }
+.arrow_border {
+    border-right: 1px solid #e7e7e7;
+    height: 25px;
+    padding: 0 5px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
 
 /* =============== 
     FAQ Section 
    =============== */
 
 #faq {
-    margin: 100px 0;
+    margin: 50px 0;
 }
 .inner_faq {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
+    /* align-items: center; */
+}
+.faq_container {
+    max-width: 890px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .faq_content {
@@ -722,7 +765,7 @@ header{
 }
 .plus_icon {
     font-size: 20px;
-    line-height: 58px;
+    line-height: 35px;
     color: #242f51;
     float: right;
 }
@@ -767,7 +810,6 @@ header{
    =============== */
 
 footer{
-    max-width: 1638px;
     max-height: 567px;
     background-color: #09142e;
     padding: 120px 0;
@@ -786,6 +828,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .footer_menu ul li{
     padding: 0 18px;
